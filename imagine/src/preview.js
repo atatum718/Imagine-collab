@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import girl1 from "./Assets/girl1.jpg";
 import girl2 from "./Assets/girl2.png";
 import man1 from "./Assets/bruce.jpg";
+import { FontAwesomeIcon } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./preview.css";
+
+// export const element = <FontAwesomeIcon icon={faHome} />
 
 class Preview extends Component {
   state = {
@@ -53,4 +57,11 @@ class Preview extends Component {
     );
   }
 }
+export const preview = () => (
+  <div>
+    <FontAwesomeIcon icon="home" />
+    <FontAwesomeIcon icon="right-arrow" />
+    <FontAwesomeIcon icon="left-arrow" />
+  </div>
+);
 export default Preview;
